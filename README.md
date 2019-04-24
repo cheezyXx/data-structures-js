@@ -1,4 +1,5 @@
-## Data structures
+# Data structures
 
-# Stack
-# Queue
+## Stack
+## Queue
+## Deque
