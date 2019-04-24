@@ -1,1 +1,4 @@
 ## Data structures
+
+# Stack
+# Queue
