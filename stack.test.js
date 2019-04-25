@@ -58,6 +58,6 @@ test('if last item can be accessed', async t => {
 
 test('if toString displays items correctly', async t => {
     const stack = getStack(t)
-    const result = '10x20x30'
-    t.assert(stack.toString('x'))
+    const result = 'Key: 0 Value: 10xKey: 1 Value: 20xKey: 2 Value: 30x'
+    t.assert(result === stack.toString('x'))
 })
