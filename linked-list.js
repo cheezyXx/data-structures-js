@@ -1,4 +1,4 @@
-const defaultEquals = require('./utils/misc').defaultEquals
+const {defaultEquals, Compare} = require('./utils/misc')
 
 class Node {
     constructor(item) {
@@ -81,7 +81,7 @@ class LinkedList {
         let current = this.head
         let index = 0
         while (current) {
-            if (this.equalsFn(item, current.item)) {
+            if (this.equalsFn(item, current.item) === Compare.EQUALS) {
                 return index
             }
             current = current.next
